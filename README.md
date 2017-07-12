@@ -17,8 +17,6 @@ File description:
 
 orderBook2.cpp: C++11 program, can be compiled and executed.
 
-orderBook2.exe: Compiled executable on Windows 10.
-
 orderBookInput.txt: sample order input file for this program. Should be in the same directory as executable/source code.
 
 orderOutput.txt: Console captured output of the program using sample order input file.
