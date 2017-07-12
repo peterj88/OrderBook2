@@ -1,32 +1,19 @@
 # OrderBook2
-Real-time order book processing support (A)dd, (D)elete and (M)odify operation.
+Real-time order book processing supporting (A)dd, (D)elete and (M)odify operation.
+Program written in C++11.
 
-Sample input:
+Input format:
+
+Add - Symbol|Op|Side|OrderId|OrderSize|Price:
 ABB|A|S|343453|5800|21.1300
+
+Delete - Symbol|Op|OrderId:
 ABB|D|343453
-IBM|A|B|123450|1000|100.0000
-IBM|A|S|123451|1000|100.0000
-MSFT|A|B|123452|2000|70.0000
-MSFT|A|B|123453|3000|70.0000
-MSFT|A|S|123454|4000|71.0000
-MS|A|B|123455|2000|50.0000
-MS|A|B|123456|3000|50.0000
-MS|A|S|123457|4000|51.0000
-MS|D|123455
-MS|D|123456
-MS|D|123457
-IBM|M|123450|500|100.0000
+
+Modify - Symbol|M|orderId|newSize|newPrice:
 MSFT|M|123453|8000|70.0000
 
-Output:
-Printing individual symbol:
-IBM|B|100.0000|500|1
-IBM|S|100.0000|1000|1
-MSFT|B|70.0000|10000|2
-MSFT|S|71.0000|4000|1
-
-Printing the entire book:
-IBM|B|100.0000|500|1
-IBM|S|100.0000|1000|1
-MSFT|B|70.0000|10000|2
-MSFT|S|71.0000|4000|1
+File description:
+orderBook2.cpp: C++11 program, can be compiled and executed.
+orderBookInput.txt: sample order input file for this program.
+orderOutput.txt: output of the program using sample order input file.
