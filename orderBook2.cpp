@@ -104,12 +104,11 @@ void OrderBook::deleteFromBook(const vector<string>& line)
 void OrderBook::modOrder(const vector<string>& line)
 {
   // MODIFY input format: Symbol|M|orderId|newSize|newPrice
-  string symbol = line[0], orderId = line[2], newPrice = line[4], newSizeString = line[3];
-  int newSize = stoi(newSizeString);
-
   // MODIFY consists of 2 actions: backout previous orderId, and apply new size/price.
   // Backout previous orderId by using delete function; Apply new size/price by using add function
 
+  string symbol = line[0], orderId = line[2], newPrice = line[4], newSizeString = line[3];
+  
   // Backout previous order
   vector<string> backoutOrder;
   backoutOrder.push_back(symbol);
