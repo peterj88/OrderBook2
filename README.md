@@ -13,6 +13,11 @@ ABB|D|343453
 Modify - Symbol|M|orderId|newSize|newPrice:<br>
 MSFT|M|123453|8000|70.0000
 
+Output format:
+
+Symbol|Side|Price|OrderSize|OrderCount<br>
+Note: Zero OrderSize is not printed.
+
 File description:<br>
 orderBook2.cpp: C++11 program, can be compiled and executed.<br>
 orderBookInput.txt: sample order input file for this program. Should be in the same directory as executable/source code.<br>
